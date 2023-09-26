@@ -2,10 +2,10 @@
 <RCC version="1.0">
   <qresource prefix="">
     <file alias="add.png">data/icons/add.png</file>
-    <file alias="AUTHORS">../server/AUTHORS</file>
+    <file alias="AUTHORS">AUTHORS</file>
     <file alias="arrows.png">data/icons/arrows.png</file>
     <file alias="compressed.png">data/icons/compressed.png</file>
-    <file alias="COPYING">../server/COPYING</file>
+    <file alias="COPYING">COPYING</file>
     <file alias="del.png">data/icons/del.png</file>
     <file alias="done.png">data/icons/done.png</file>
     <file alias="icon.png">data/icons/icon.png</file>
