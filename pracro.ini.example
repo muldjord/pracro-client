@@ -1,0 +1,18 @@
+[main]
+#course="2"
+## Under Windows, if no user is set, it will use the currently logged on Windows user
+#user="user"
+#pcpviewer="true"
+
+[patientidocr]
+enabled="true"
+anchorxdelta="15"
+anchorydelta="35"
+maxcolordifference="80"
+debug="false"
+
+[server]
+host="localhost"
+port="12345"
+usehttps="true"
+certverify="true"

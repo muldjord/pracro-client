@@ -1,0 +1,32 @@
+# This file defines contents of the Pracro launcher dialog 'Start' combobox
+#
+# Lines format is 'TYPE;VALUE[;TITLE]'
+#
+# TYPE can be 'course' or 'launch'
+#
+# 'course' VALUE is an ID which must match course ID on the Pracro server
+#
+# 'launch' VALUE is the command to run.
+#   - Can use '%p' for Patient ID without '-' as command-line parameter
+#   - Can use '%P' for Patient ID with '-' as command-line parameter
+#
+# TITLE is optional and defines the title shown in the Pracro Starter. If no TITLE is given
+# the VALUE will be used as title.
+#
+# If only one runentry exists and a patient-id is given on commandline or found by the OCR
+# system, Pracro will autolaunch that entry without showing the Pracro Starter dialog.
+#
+# Entries will be added to the Pracro Starter in the order they are entered into this file.
+#
+# WARNING!!! This file might be overwritten by automated Pracro Client updates. To avoid
+# this please consider setting a custom runentries file in pracro.ini with:
+#  [main]
+#  runentries="data/CUSTOMFILE.dat"
+#
+course;2;Apparatur data
+launch;doublevision/DoubleVision.exe -c %p;Vis patientbilleder
+course;1;Refraktive forløb
+course;18;Katarakt forløb
+course;16;Forsyn
+course;17;App
+launch;pxdocument/PxDocument.exe -p %P;Opret PDF i patient arkiv

@@ -1,0 +1,5 @@
+# First line defines default course. Can be both NAME or ID
+# Subsequent lines define NAME;ID pairs
+2
+Apparatur;2
+Refraktiv;1

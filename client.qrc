@@ -1,0 +1,21 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource prefix="">
+    <file alias="add.png">data/icons/add.png</file>
+    <file alias="AUTHORS">../server/AUTHORS</file>
+    <file alias="arrows.png">data/icons/arrows.png</file>
+    <file alias="compressed.png">data/icons/compressed.png</file>
+    <file alias="COPYING">../server/COPYING</file>
+    <file alias="del.png">data/icons/del.png</file>
+    <file alias="done.png">data/icons/done.png</file>
+    <file alias="icon.png">data/icons/icon.png</file>
+    <file alias="icon_close_commit.png">data/icons/icon_close_commit.png</file>
+    <file alias="icon_close_no_commit.png">data/icons/icon_close_no_commit.png</file>
+    <file alias="icon_current_sessions.png">data/icons/icon_current_sessions.png</file>
+    <file alias="icon_discard.png">data/icons/icon_discard.png</file>
+    <file alias="open.png">data/icons/open.png</file>
+    <file alias="padlock.png">data/icons/padlock.png</file>
+    <file alias="undone.png">data/icons/undone.png</file>
+    <file alias="VeraMono.ttf">data/fonts/VeraMono.ttf</file>
+  </qresource>
+</RCC>
