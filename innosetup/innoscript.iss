@@ -50,7 +50,6 @@ Source: "..\release\Qt5Gui.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\release\Qt5Network.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\release\Qt5Widgets.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\release\Qt5Xml.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\release\test_pracro.bat"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\data\ocr\*.png"; DestDir: "{app}\data\ocr\"; Flags: ignoreversion
 Source: "..\release\imageformats\*"; DestDir: "{app}\imageformats\"; Flags: ignoreversion
 Source: "..\release\platforms\qwindows.dll"; DestDir: "{app}\platforms\"; Flags: ignoreversion
