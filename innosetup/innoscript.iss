@@ -18,7 +18,7 @@ DefaultDirName={autopf64}\{#MyAppName}
 DisableDirPage=yes
 DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
-LicenseFile=..\..\server\COPYING
+LicenseFile=..\COPYING
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
 OutputBaseFilename=PracroClientSetup
