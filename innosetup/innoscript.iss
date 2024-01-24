@@ -2,8 +2,8 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "Pracro"
-#define MyAppVersion "2.6.3"
-#define MyAppPublisher "Øjensygdomme, AUH"
+#define MyAppVersion "2.6.9"
+#define MyAppPublisher "MyCompany"
 #define MyAppExeName "pracro.exe"
 
 [Setup]
