@@ -62,7 +62,7 @@ Source: "..\release\pxdocument\imageformats\qjpeg.dll"; DestDir: "{app}\pxdocume
 Source: "..\release\pxdocument\mediaservice\dsengine.dll"; DestDir: "{app}\pxdocument\mediaservice\"; Flags: ignoreversion
 Source: "..\release\pxdocument\mediaservice\qtmedia_audioengine.dll"; DestDir: "{app}\pxdocument\mediaservice\"; Flags: ignoreversion
 Source: "..\release\pxdocument\platforms\qwindows.dll"; DestDir: "{app}\pxdocument\platforms\"; Flags: ignoreversion
-Source: "..\data\runentries.dat"; DestDir: "{app}\data\"; Flags: ignoreversion
+Source: "..\release\data\runentries.dat"; DestDir: "{app}\data\"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
