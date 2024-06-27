@@ -29,6 +29,7 @@
 #include <QHBoxLayout>
 #include <QPainter>
 #include <QLabel>
+#include <QScrollBar>
 
 #include "debug.h"
 
@@ -36,10 +37,8 @@
 #define ANIM_INTERVAL 20 // ms
 
 Collapser::Collapser(QWidget *current, QScrollArea *scroll)
+  : current_widget(current), scrollarea(scroll)
 {
-  current_widget = current;
-  scrollarea = scroll;
-
   timer = new QTimer(this);
   timer->setSingleShot(true);
   timer->setInterval(ANIM_INTERVAL);
@@ -96,7 +95,13 @@ void Collapser::animateToWidget(QWidget *widget, bool stv)
 void Collapser::scrollToView()
 {
   if(scroll_to_view && scrollarea && current_widget) {
-    scrollarea->ensureWidgetVisible(current_widget);
+    // Scroll to make the newly opened macro entirely visible on screen unless it's higher than the window
+    // then align the top to the top of the window
+    if(current_widget->height() >= scrollarea->verticalScrollBar()->height()) {
+      scrollarea->verticalScrollBar()->setValue(current_widget->mapTo(scrollarea->widget(), QPoint(0, -30)).y());
+    } else {
+      scrollarea->ensureWidgetVisible(current_widget);
+    }
   }
 }
 
