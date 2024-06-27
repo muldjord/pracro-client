@@ -86,9 +86,11 @@ bool MacroDrawer::eventFilter(QObject *obj, QEvent *event)
 {
   if(event->type() == QEvent::MouseButtonRelease) {
     QMouseEvent *mouseEvent = static_cast<QMouseEvent *>(event);
-    if(mouseEvent->y() < 16 && isEnabled() &&
-       // Temporay hack. TODO: Calculate actual text width.
-       mouseEvent->x() < title().length() * 5)
+
+    QFontMetrics fontMetrics(font());
+    // Make sure we can also open the macro by clicking the title
+    if(mouseEvent->y() < fontMetrics.height() && isEnabled() &&
+       mouseEvent->x() < fontMetrics.horizontalAdvance(title()))
       toggleMe();
   }
   return QObject::eventFilter(obj, event);
