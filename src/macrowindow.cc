@@ -345,6 +345,6 @@ void MacroWindow::animated(QWidget *w)
     setTabOrderRecursive(scrollarea);
 
     // Set keyboard focus on the first focusable widget in the macro.
-    mainwidget->setKeyboardFocusRecursive();  
+    mainwidget->setKeyboardFocusRecursive();
   }
 }
