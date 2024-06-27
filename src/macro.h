@@ -61,7 +61,7 @@ public:
   QString caption;
 
   // Dependency system
-  QStringList requires;
+  QStringList requiresmacro;
   //  bool isrequired;
   bool iscompleted;
 

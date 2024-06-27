@@ -97,14 +97,14 @@ void Macro::update(QDomNode &node)
   // Read and parse requirement list.
   if(elem.hasAttribute("requires")) {
     QString req = elem.attribute("requires");
-    requires = req.split(QRegExp("\\W+"), Qt::SkipEmptyParts);
+    requiresmacro = req.split(QRegExp("\\W+"), Qt::SkipEmptyParts);
   }
 
   // Test if requirements are fulfilled
-  QStringList::iterator rs = requires.begin();
+  QStringList::iterator rs = requiresmacro.begin();
   QStringList blocking;
   bool active = true;
-  while(rs != requires.end()) {
+  while(rs != requiresmacro.end()) {
     Entities::iterator es = entities.begin();
     while(es != entities.end()) {
       Entity *e = *es;
