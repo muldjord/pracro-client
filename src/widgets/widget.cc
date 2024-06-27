@@ -510,12 +510,6 @@ void Widget::createWidget(QDomNode &xml_node, QLayout *layout)
 {
   QDomElement xml_elem = xml_node.toElement();
 
-  // TODO: Why do we do this??
-  if(xml_elem.hasAttribute("prefilled") &&
-     xml_elem.attribute("prefilled") != "pracro") {
-    if(macrowindow) macrowindow->macroChanged();
-  }
-
   Widget *widget = nullptr;
   if(xml_elem.tagName() == "spacer") {
 
