@@ -64,7 +64,7 @@ Button::Button(QDomNode &node, MacroWindow *macrowindow)
     connect(macrowindow, &MacroWindow::macroHasChanged, this, &Button::do_enable);
   }
 
-   if(elem.attribute("action") == "commit") {
+  if(elem.attribute("action") == "commit") {
     QList<QKeySequence> lst;
     lst << QKeySequence("Ctrl+Enter");
     lst << QKeySequence("Ctrl+Return");
